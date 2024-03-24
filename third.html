@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>My first website</title>
+<link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  header, footer {
+    background-color: #080000;
+    text-align: center;
+    padding: 1rem;
+    color: white;
+  }
+  nav.main-nav, nav.vertical-nav {
+    margin: 10px 0;
+    padding: 0;
+    background-color: rgb(168, 167, 167);
+    ;
+  }
+  nav.main-nav a, nav.vertical-nav a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: rgb(1, 0, 0);
+    
+  }
+  nav.main-nav a:hover, nav.vertical-nav a:hover {
+    color: red;
+  }
+  .container {
+    display: flex;
+  }
+  nav.vertical-nav {
+    flex: 1;
+    border-right: 1px solid #ddd;
+    padding-right: 20px;
+  }
+  section.content {
+    flex: 3;
+    padding: 20px;
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>My Website</h1>
+</header>
+<nav>
+  <nav class="main-nav">
+  <a href="index.html">First page</a>
+  <a href="second.html">Second Page</a>
+  <a href="third.html">Third page</a>
+</nav>
+
+
+
+<div class="container">
+  <nav class="vertical-nav">
+      <div>
+        <a href="index.html">London</a>
+    </div>
+    <div>
+        <a href="second.html">Paris</a>
+    </div>
+    <div>
+        <a href="third.html">Tokyo</a>
+    </div>
+    <a href="https://www.google.com" target="_blank">Google</a>
+    <a href="https://www.example.com" target="_blank">Example</a>
+  </nav>
+  <section class="content">
+    <h2>Third Page</h2>
+    <p>This is my third page</p>
+    <p>You should have something similar.</p>
+  </section>
+</div>
+
+<footer>
+  <p>Copyright &copy; John Smith </p>
+</footer>
+
+</body>
+</html>
+

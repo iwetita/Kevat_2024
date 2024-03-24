@@ -1,7 +1,55 @@
-body {
-    background: lightgray;
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-.red {
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a:hover {
     color: red;
+}
+
+
+.nav-vert {
+    float: left;
+    width: 20%;
+    height: 100vh;
+    background-color: #f0f0f0;
+    padding: 20px 0;
+}
+
+.nav-vert a {
+    display: block;
+    margin: 10px 0;
+    padding: 5px 20px;
+    background-color: #ddd;
+    color: black;
+    text-decoration: none;
+}
+
+.nav-vert a:hover {
+    background-color: #ccc;
+}
+
+
+section {
+    float: right;
+    width: 75%;
+    padding: 20px;
+}
+
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+body, h1, p {
+    margin: 10px;
+    padding: 10px;
 }
