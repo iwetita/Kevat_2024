@@ -1,0 +1,168 @@
+/* Base and Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    font-family: 'Roboto', sans-serif; 
+    background-color: #f0f0f0; /* Light grey background*/
+    color: #333; 
+    line-height: 1.6;
+}
+body {
+    background-image: url('vegeterian.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+
+/* Header and Navigation Styles */
+.navbar {
+    background-color: #009688; 
+    color: white;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #b2dfdb; 
+}
+
+
+h1, h2, h3 {
+    color: #00695c; 
+}
+p {
+    margin-bottom: 1em;
+}
+
+/* Main Container */
+.container {
+    padding: 20px;
+    max-width: 1200px; 
+    margin: auto; 
+}
+
+.about-us .container {
+    max-width: none; 
+    width: 100%; 
+    padding: 20px; 
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px; 
+}
+
+/* Buttons and Forms */
+button, input[type="submit"], .btn-primary {
+    background-color: #26a69a; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button:hover, input[type="submit"]:hover, .btn-primary:hover {
+    background-color: #00796b; 
+}
+
+/* Forms specific styling */
+.form-label {
+    font-weight: bold;
+    color: #009688;
+}
+.form-control {
+    border: 2px solid #009688; 
+    border-radius: 5px; 
+}
+textarea.form-control {
+    height: auto; 
+    min-height: 100px; 
+}
+
+/* Footer */
+footer {
+    background-color: #00796b; 
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Responsive Grid Layout */
+.features-grid, .recipes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Utility Classes */
+.text-center {
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+    .nav-item {
+        display: block;
+    }
+}
+.table {
+    width: 60%; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.table-sm th, .table-sm td {
+    padding: 0.3rem; 
+}
+
+.recipes-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 20px;
+    margin-top: 20px;
+}
+
+.recipes-grid img {
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
+}
+
+.about-us {
+    background-color: #b2dfdb; 
+    color: #004d00; 
+}
+
+.about-us h1, .about-us h2, .about-us p {
+    color: #004d40; 
+}
+
+
+.about-us .table th, .about-us .table td {
+    color: #004d40; 
+}
+
+.about-us {
+    background-color: #bce0d7; 
+    color: #004d40; 
+    text-align: center; 
+}
+
+.about-us h1, .about-us h2, .about-us p {
+    font-weight: bold; 
+}
+
+
+.about-us .table {
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
+
